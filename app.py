@@ -39,14 +39,14 @@ def predict_intent(text):
     if confidence < 0.6:
         return "Unknown", round(confidence * 100, 1)
 
-    return id2label[str(pred_id)], round(confidence * 100, 1)
+    return id2label[pred_id], round(confidence * 100, 1)
 
 # ---------------- City Extraction ----------------
-def extract_city(text: str) -> str:
+def extract_city(text: str) -> str | None:
     for city in cities_extended:
         if city.lower() in text.lower():
             return city
-    return "Tokyo"  # Default fallback
+    return None
 
 # ---------------- Hotel Logic ----------------
 def find_hotels_by_city(city: str, exclude: list = None, limit=3):
@@ -65,6 +65,10 @@ def recommend_other_hotels(current_city: str, current_hotels: list = None, limit
 # ---------------- Intent Response Generator ----------------
 def generate_response(intent, user_input, chat_state):
     city = extract_city(user_input)
+
+    # If city is required but missing, flag as unknown
+    if intent in ["MakeBooking", "RequestOtherHotel", "RequestAmenitiesInfo"] and not city:
+        return "I'm not sure what location you're referring to. Please mention a city so I can assist you.", []
 
     if intent == "MakeBooking":
         matches = find_hotels_by_city(city)
