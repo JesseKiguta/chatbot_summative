@@ -1,4 +1,4 @@
-# Hotel Booking Chatbot
+![Screenshot 2025-06-21 111250](https://github.com/user-attachments/assets/1ce2545b-c67f-4e58-a05e-7a8b621a2e4d)# Hotel Booking Chatbot
 
 A conversational AI chatbot for assisting users with hotel bookings. The bot predicts user intent (e.g., make a booking, request amenities info, etc.) and provides dynamic responses using a locally stored hotel dataset.
 
@@ -97,7 +97,11 @@ python app.py
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | I'm looking for a hotel in Nairobi | Here are some hotels in Nairobi you can book: - Villanueva LLC Hotel (\$302, 4.3 stars) - Moore, Stewart and Day Hotel (\$269, 3.7 stars) - Miller-Smith Hotel (\$173, 5.0 stars)                                                                                                                                        |
 | What utilities do they offer?      | Here are the amenities for the recent hotels you viewed: - Villanueva LLC Hotel: Airport Shuttle, Air Conditioning, Restaurant - Moore, Stewart and Day Hotel: Laundry Service, Parking, Breakfast, Gym, Non-smoking Rooms - Miller-Smith Hotel: Pet Friendly, Laundry Service, Spa, Gym, Airport Shuttle |
-| Do you also do flights?            | I'm not sure how to respond to that. Could you rephrase your question about hotel booking?                                                                                                                                                                                                                |
+| Do you also do flights?            | I'm not sure how to respond to that. Could you rephrase your question about hotel booking?                                            
+
+
+Screenshot of conversation (cont):
+![Screenshot 2025-06-21 111250](https://github.com/user-attachments/assets/ab7e829e-c205-45d1-90c8-74ab4d967f47)
 
 ---
 
