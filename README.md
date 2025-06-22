@@ -1,4 +1,4 @@
-![Screenshot 2025-06-21 111250](https://github.com/user-attachments/assets/1ce2545b-c67f-4e58-a05e-7a8b621a2e4d)# Hotel Booking Chatbot
+## Hotel Booking Chatbot
 
 A conversational AI chatbot for assisting users with hotel bookings. The bot predicts user intent (e.g., make a booking, request amenities info, etc.) and provides dynamic responses using a locally stored hotel dataset.
 
